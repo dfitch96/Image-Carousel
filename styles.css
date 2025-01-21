@@ -1,1 +1,49 @@
 
+
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.frame{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: grey;
+    width: 800px;
+    height: 600px;
+
+}
+
+.carousel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel button{
+    width: 5rem;
+    height: 2rem;
+}
+
+.carousel-selections{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-selections button{
+    margin: 10px;
+}
+
+.carousel-image{
+    
+    width: 80%;
+    height: 80%;
+}
