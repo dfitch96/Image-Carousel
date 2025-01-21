@@ -24,6 +24,7 @@ body{
     flex-direction: column;
     background-color: grey;
     width: 80%;
+    height: 80%;
     max-width: 800px;
     padding: 20px;
     border-radius: 10px;
@@ -64,6 +65,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 400px;
     max-height: 400px;
     overflow: hidden;
     
