@@ -1,36 +1,30 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body{
-    
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background-color: #f5f5f5;
+    background-color: #e6e2d3; 
     font-family: 'Times New Roman', Times, serif;
 }
 
 .frame{
-    
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    background-color: grey;
+    background-color: #2d2d34; 
     width: 80%;
     height: 80%;
     max-width: 800px;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-   
-
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
 }
 
 .carousel{
@@ -38,26 +32,35 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    
 }
 
-.carousel button{
-    width: 5rem;
-    height: 2.5rem;
-    background-color: #333;
+.carousel button {
+    width: 3rem;
+    height: 3rem;
+    background-color: #4a90e2;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: background-color 0.3s ease;
 }
 
-.carousel button:hover{
-    background-color: #555;
+.carousel button#previous::before {
+    content: "←"; 
 }
 
+.carousel button#next::before {
+    content: "→"; 
+}
 
+.carousel button:hover {
+    background-color: #357ABD; 
+}
 
 
 .carousel-image{
@@ -68,8 +71,6 @@ body{
     height: 400px;
     max-height: 400px;
     overflow: hidden;
-    
-
 }
 
 .carousel-image img{
@@ -77,10 +78,6 @@ body{
     max-height: 100%;
     object-fit: contain;
 }
-
-
-
-
 
 .carousel-selections{
     display: flex;
@@ -92,19 +89,17 @@ body{
 .carousel-selections button{
     padding: 10px 15px;
     border: none;
-    background-color: #666;
+    background-color: #d35400; 
     color: white;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    
 }
 
 .carousel-selections button:hover{
-    background-color: #444;
+    background-color: #b03a00; 
 }
 
 .carousel-selections button.active{
-    background-color: #333;
+    background-color: #27ae60; 
 }
-
